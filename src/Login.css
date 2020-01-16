@@ -1,0 +1,15 @@
+.proceed {
+    justify-content: flex-end;
+        }
+        .fullWidth {
+            width: 100%;
+        }
+        .fullWidth > input {
+        border-radius: 5px;
+        margin-left: 10px;
+        background: #2F3450;
+        width: 40%;
+        margin-top: 45px;
+        padding: 12px;
+        color: #ffffff;
+         }
