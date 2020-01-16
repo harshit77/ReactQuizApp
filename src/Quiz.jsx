@@ -23,7 +23,7 @@ function quizUsername(loginName) {
 
 useEffect(() => {
     async function fetchData() {
-        const response= await fetch('http://www.json-generator.com/api/json/get/cftWfSJxAi?indent=2');
+        const response= await fetch('https://www.json-generator.com/api/json/get/cftWfSJxAi?indent=2');
         const result= await response.json();
        const  data=result.results;
        const userResponses=data.map(userResponse=> {
