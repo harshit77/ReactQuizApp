@@ -5,6 +5,7 @@ import './App.css';
 function App({name}) {
 function makeRequestWithUserGesture() {
   const promise = document.requestStorageAccess();
+	console.log("cdsavc h",promise);
   promise.then(
     function () {
      alert("Yes");
