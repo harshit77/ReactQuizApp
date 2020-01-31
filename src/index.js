@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-<script>
 function makeRequestWithUserGesture() {
   const promise = document.requestStorageAccess();
   promise.then(
@@ -14,7 +13,6 @@ function makeRequestWithUserGesture() {
     }
   );
 }
-</script>
 <button onclick="makeRequestWithUserGesture()">Play video</button>
 
 ReactDOM.render(<App name="Stranger"/>, document.getElementById('root'));
