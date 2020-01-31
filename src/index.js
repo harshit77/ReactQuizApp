@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 <script>
 function makeRequestWithUserGesture() {
-  var promise = document.requestStorageAccess();
+  const promise = document.requestStorageAccess();
   promise.then(
     function () {
      alert("Yes");
