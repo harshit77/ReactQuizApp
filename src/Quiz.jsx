@@ -20,13 +20,26 @@ function quizUsername(loginName) {
     setUsername(loginName);
     setLoginScreen(false)
 }
+ 
+ const FAKE_DATA=[{
+id: "0",
+question: "Which letter of the alphabet has the most water?",
+correct_answer : "C",
+incorrect_answers : ['A', 'B', 'C']
+},
+{
+id: "1",
+question: "What kind of dog keeps the best time?",
+correct_answer: "Watchdog",
+incorrect_answers: ['Watchdog', 'hotdog', 'Cutedog']
+}];
 
 useEffect(() => {
     async function fetchData() {
-        const response= await fetch('https://www.json-generator.com/api/json/get/cftWfSJxAi?indent=2');
-        const result= await response.json();
-       const  data=result.results;
-       const userResponses=data.map(userResponse=> {
+//         const response= await fetch('https://www.json-generator.com/api/json/get/cftWfSJxAi?indent=2');
+//         const result= await response.json();
+//        const  data=result.results;
+       const userResponses=FAKE_DATA.map(userResponse=> {
             return {
             question:htmlDecode(userResponse.question),
             correctAnswer:userResponse.correct_answer,
